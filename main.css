@@ -129,8 +129,7 @@ body {
   }
 
   .contents-sidebar .contents-footer > h2 {
-    color: #fff;
-    padding-top: 0;
+    display: none;
   }
 }
 

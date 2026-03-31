@@ -6,14 +6,15 @@ alwaysApply: true
 # Static site (agent)
 
 - This is HTML5 static website
+- No external dependencies.
 - Markup should be minimalistic, use pure tags like <b>, <ul>, <p>, <h1>, etc. when possible
 - Images live under `images/`
 - CSS is `main.css`
 - CSS should use styles (.x), not ids (#x)
 - PDFs live under `dl/`
 - Website should be adaptive, min supported width is 320px
-- Every page should have breadcrumbs in a style 'Home /' or 'Home / Topics /'. Current page title is NOT added in the breadcrumbs - it's already there in <h1> below.
-- Every page has contents menu with top-level links. Some top-level links are aggregated under 'Sessions' category, but they should still be considered as top-level. The current page’s entry in Contents must be plain bold text (`<b>…</b>`), never a link to the same URL. On a deeper page (e.g. a single topic), parent sections stay normal links; only the leaf that matches the current page is non-link bold.
+- Every page should have breadcrumbs in a style 'Home /' or 'Home / Topics /'. Current page title is NOT added in the breadcrumbs - it's already there in <h1> below. 'Sessions' are not added into breadcrumbs.
+- Every page has contents menu with top-level links. Some top-level links are aggregated under 'Sessions' category, but they should still be considered as top-level. The current page’s entry in Contents must be plain bold text (`<b>…</b>`), never a link to the same URL. On a topic detail page under `topics/`, **Topics** in Contents is `<a href="../topics.html"><b>Topics</b></a>` (link + bold); individual topic pages are **not** listed in the global Contents menu (only on `topics.html`).
 
 When working on content (not on global markup by explicit request):
 - Minimal additions and changes to CSS are allowed, for huge ones request confirmation
